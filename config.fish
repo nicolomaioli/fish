@@ -1,8 +1,8 @@
 set -gx VISUAL nvim
 set -gx EDITOR nvim
+set -gx GITHUB_USER nicolomaioli
 
 if status is-interactive
-	set -gx GITHUB_USER nicolomaioli
 	set -gx FISH_CONFIG_FOLDER "$HOME"/.config/fish
 
 	alias gmi='go mod init github.com/"$GITHUB_USER"/(basename $PWD)'
