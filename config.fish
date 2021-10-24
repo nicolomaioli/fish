@@ -1,5 +1,7 @@
+set -gx VISUAL nvim
+set -gx EDITOR nvim
+
 if status is-interactive
-	set -gx EDITOR nvim
 	set -gx GITHUB_USER nicolomaioli
 	set -gx FISH_CONFIG_FOLDER "$HOME"/.config/fish
 
