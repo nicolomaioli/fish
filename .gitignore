@@ -1,5 +1,5 @@
 # Private or local config
-private.fish
+private
 
 # fish generated files
 fishd*
