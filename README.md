@@ -1,3 +1,5 @@
 # Fish
 
-This requires my `alacritty`, `tmux`, and `nvim` configs to work correctly.
+Dependencies:
+	- [fisher](https://github.com/jorgebucaran/fisher)
+	- [bass](https://github.com/edc/bass)

@@ -4,3 +4,10 @@ private
 # fish generated files
 fishd*
 fish_variables
+
+# fisher
+fish_plugins
+completions/
+functions/fisher.fish
+functions/__bass.py
+functions/bass.fish
