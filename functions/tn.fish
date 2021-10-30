@@ -1,6 +1,6 @@
 function tn
 	set SESSION (basename $PWD)
-	set SESSION_EXISTS (tmux list-sessions 2> /dev/null | grep $SESSION)
+	set SESSION_EXISTS (tmux list-sessions 2>/dev/null | grep $SESSION)
 
 	if [ -z "$SESSION_EXISTS" ]
 		tmux new-session -d -s $SESSION
