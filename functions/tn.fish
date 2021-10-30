@@ -1,12 +1,11 @@
 function tn
 	set TMUX (pgrep tmux)
 
-	if [ -z "$TMUX" ]
-		tmux new-session -d
+	if [ -n "$TMUX" ]
+		set SESSION_EXISTS (tmux list-sessions | grep $SESSION)
 	end
 
 	set SESSION (basename $PWD)
-	set SESSION_EXISTS (tmux list-sessions | grep $SESSION)
 
 	if [ -z "$SESSION_EXISTS" ]
 		tmux new-session -d -s $SESSION
