@@ -1,6 +1,6 @@
 function tn
 	set FOLDER (basename $PWD)
-	set SESSION (string replace '.' '' $FOLDER)
+	set SESSION (string replace -a '.' '' $FOLDER)
 	set SESSION_EXISTS (tmux list-sessions 2>/dev/null | grep $SESSION)
 
 	if [ -z "$SESSION_EXISTS" ]
